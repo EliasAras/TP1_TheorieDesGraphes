@@ -1,6 +1,6 @@
-Emmanuel 	0 0 1 0 0 0 
-Manuel 	 	0 0 0 1 0 1
-Francois 	1 0 0 0 0 0
-Alain 	 	0 0 0 0 0 0
-Marine 	 	0 1 0 0 0 0
-Christiane 	0 0 0 0 0 0
+0 0 1 0 0 0 
+0 0 0 1 0 1
+1 0 0 0 0 0
+0 0 0 0 0 0
+0 1 0 0 0 0
+0 0 0 0 0 0
