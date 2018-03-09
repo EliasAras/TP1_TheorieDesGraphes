@@ -7,10 +7,10 @@ Graphe::Graphe()
 
 Graphe::~Graphe()
 {
-    delete m_vsommet;
+
 }
 
-std::vector<int*> Graphe::Getinflu()
+std::vector<Sommet> Graphe::Getinflu()
 {
     return m_influ;
 }
@@ -20,12 +20,12 @@ int Graphe::Getordre()
     return m_ordre;
 }
 
-std::vector<std::vector<Sommet*> > Graphe::Getvsommet()
+std::vector<Arete> Graphe::Getvsommet()
 {
-    return *m_vsommet;
+    return m_vsommet;
 }
 
-void Graphe::Setinflu(std::vector<int*> val)
+void Graphe::Setinflu(std::vector<Sommet> val)
 {
     m_influ = val;
 }
@@ -35,12 +35,16 @@ void Graphe::Setordre(int val)
     m_ordre = val;
 }
 
-void Graphe::Setvsommet(std::vector<std::vector<Sommet*> > *val)
+void Graphe::Setvsommet(std::vector<Arete> val)
 {
     m_vsommet = val;
 }
 
-void Graphe::AllouerMatrice(int ordre)
+void Graphe::Instanciation()
 {
+    std::vector<Sommet> temp;
+    Sommet d;
 
+    temp.push_back(d);
+    Setinflu(temp);
 }

@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "Sommet.h"
+#include "Arete.h"
 
 class Graphe
 {
@@ -10,21 +11,21 @@ class Graphe
         Graphe();
         virtual ~Graphe();
 
-        std::vector<int*> Getinflu();
+        std::vector<Sommet> Getinflu();
         int Getordre();
-        std::vector<std::vector<Sommet*> > Getvsommet();
+        std::vector<Arete> Getvsommet();
 
-        void Setinflu(std::vector<int*> val);
+        void Setinflu(std::vector<Sommet> val);
         void Setordre(int val);
-        void Setvsommet(std::vector<std::vector<Sommet*> > *val);
+        void Setvsommet(std::vector<Arete> val);
 
-        void AllouerMatrice(int ordre);
+        void Instanciation();
 
 
     private:
-        std::vector<int*>m_influ;
+        std::vector<Sommet> m_influ;
         int m_ordre;
-        std::vector<std::vector<Sommet*> > *m_vsommet;
+        std::vector<Arete> m_vsommet;
 
 
 };
