@@ -1,6 +1,14 @@
-Emmanuel M#
-Manuel V#
-Francois B#
-Alain J#
-Marine L#
-Christiane T#
+6
+Emmanuel M 
+Manuel V 
+Francois B
+Alain J 
+Marine L 
+Christiane T
+
+001000
+000101
+100000
+000000
+010000
+000000

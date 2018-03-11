@@ -2,6 +2,8 @@
 #define GRAPHE_H
 
 #include <vector>
+#include <fstream>
+#include <cstdlib>
 #include "Sommet.h"
 #include "Arete.h"
 
@@ -11,21 +13,24 @@ class Graphe
         Graphe();
         virtual ~Graphe();
 
-        std::vector<Sommet> Getinflu();
+        std::vector<Arete> Getinflu();
         int Getordre();
-        std::vector<Arete> Getvsommet();
+        std::vector<Sommet> Getvsommet();
 
-        void Setinflu(std::vector<Sommet> val);
+        void Setinflu(std::vector<Arete> val);
         void Setordre(int val);
-        void Setvsommet(std::vector<Arete> val);
+        void Setvsommet(std::vector<Sommet> val);
 
         void Instanciation();
+        void Recuperation(std::string nomfichier);
+
+        void affichage();
 
 
     private:
-        std::vector<Sommet> m_influ;
+        std::vector<Arete> m_influ;
         int m_ordre;
-        std::vector<Arete> m_vsommet;
+        std::vector<Sommet> m_vsommet;
 
 
 };
