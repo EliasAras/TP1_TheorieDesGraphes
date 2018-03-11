@@ -73,8 +73,6 @@ void Graphe::Recuperation(std::string nomfichier)
 
     std::ifstream fichier(nomfichier.c_str(), std::ios::in);
 
-    Instanciation();
-
     if(!fichier.fail())  // si l'ouverture a réussi
     {
         ///Recuperation de l'ordre
@@ -144,7 +142,7 @@ void Graphe::affichage()
 {
     std::cout << std::endl << std::endl;
 
-    if(Getvsommet().size() < 0)
+    if(Getvsommet().size() > 0)
     {
         std::cout << "Voici les sommets : " << std::endl;
         for(int i(0); i < Getvsommet().size(); ++i)
